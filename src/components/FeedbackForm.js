@@ -35,6 +35,7 @@ export default function FeedbackForm({ handleAdd }) {
       setText("");
     }
   };
+
   return (
     <Card>
       <form onSubmit={handleSubmit}>
