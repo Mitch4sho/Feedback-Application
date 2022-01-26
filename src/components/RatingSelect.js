@@ -8,8 +8,8 @@ export default function RatingSelect({ select }) {
   const { feedbackEdit } = useContext(FeedbackContext);
 
   useEffect(() => {
-    if (feedbackEdit.edit === true) {
-      setSelected(feedbackEdit.rating);
+    if (feedbackEdit.edit) {
+      setSelected(feedbackEdit.item.rating);
     }
   }, [feedbackEdit]);
 
